@@ -48,7 +48,6 @@ export default function About() {
     .       h  e  l  l  o    w  o  r  l  d
         </pre></code>
       </div>
-
     </div>
   );
 }
