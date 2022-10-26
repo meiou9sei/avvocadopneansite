@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.js": "/avvocadopneansite/static/js/main.ff89de29.js",
+    "main.js": "/avvocadopneansite/static/js/main.fcf463af.js",
     "index.html": "/avvocadopneansite/index.html",
-    "main.ff89de29.js.map": "/avvocadopneansite/static/js/main.ff89de29.js.map"
+    "main.fcf463af.js.map": "/avvocadopneansite/static/js/main.fcf463af.js.map"
   },
   "entrypoints": [
-    "static/js/main.ff89de29.js"
+    "static/js/main.fcf463af.js"
   ]
 }
