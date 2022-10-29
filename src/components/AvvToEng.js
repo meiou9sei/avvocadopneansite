@@ -5,7 +5,7 @@ const defaultCase = 97;
 
 const AvvToEng = () => {
   const [avvText, setAvvText] = useState("");
-  const [engText, setEngText] = useState("hi");
+  const [engText, setEngText] = useState("");
 
   useEffect(() => {
     //AVV->ENG EXPLAINED (uppercase example)
@@ -95,7 +95,7 @@ const AvvToEng = () => {
         value={avvText}
         onChange={(e) => setAvvText(e.target.value)}
       ></textarea>
-      <p>test translation:</p>
+      <p>test Eng translation:</p>
       <p>{engText}</p>
     </div>
   );
