@@ -1,19 +1,16 @@
 export default function Footer() {
+  // prettier-ignore
   return (
     <div>
-      <p class='footer-text'>
+      <p className='footer-text'>
         Webpage created by{" "}
-        <a href='https://github.com/meiou9sei' class='links' target='_blank'>
+        <a href='https://github.com/meiou9sei' className='links' target='_blank'>
           meiou9sei
         </a>
       </p>
       <p>
         <small>
-          <a
-            href='https://github.com/meiou9sei/avvocadopneansite'
-            class='links'
-            target='_blank'
-          >
+          <a href='https://github.com/meiou9sei/avvocadopneansite'className='links' target='_blank'>
             See the code for this page
           </a>
         </small>

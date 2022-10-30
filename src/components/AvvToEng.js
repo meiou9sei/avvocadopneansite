@@ -5,7 +5,7 @@ const defaultCase = 97;
 
 const AvvToEng = () => {
   const [avvText, setAvvText] = useState("");
-  const [engText, setEngText] = useState("hi");
+  const [engText, setEngText] = useState("");
 
   useEffect(() => {
     //AVV->ENG EXPLAINED (uppercase example)
@@ -28,6 +28,7 @@ const AvvToEng = () => {
       cI += numIncrementCharIndex;
     }
 
+    // I think this should be just else ifs, rather than having ifs? I think that'd be easier to deal with
     // prettier-ignore
     while (cI < sTD.length) {
       // letterCase is 65 for uppercase, 97 for lowercase (ASCII)
@@ -95,7 +96,7 @@ const AvvToEng = () => {
         value={avvText}
         onChange={(e) => setAvvText(e.target.value)}
       ></textarea>
-      <p>test translation:</p>
+      <p>test Eng translation:</p>
       <p>{engText}</p>
     </div>
   );

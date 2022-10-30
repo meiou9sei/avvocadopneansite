@@ -7,12 +7,7 @@ export default function About() {
         <p>hi welcome thanks for checking it out. This page is pretty obviously</p>
         <img src='images/pikachuconstruction.gif' alt="pikachu drilling under a 'under construction' sign gif" />
         <p>but I'll be working on it in the coming days/weeks.</p>
-      </div>
-      <div className="howToUseSite">
-        <h2>HOW TO USE THIS SITE</h2>
-        <p>currently Avvocadopnean -&gt; English is only functional.</p>
-        <p>I'll code English -&gt; Avvocadopnean (probably what you're more interested in) soon</p>
-        <p>anyways, check out <a href="#usingAvv">USING AVVOCADOPNEAN</a> on how to type stuff</p>
+        <p>basic text mostly works. some stuff like numbers don't work (yet). others bugs and features will be rolled out in due time</p>
       </div>
 
       <div id="aboutAvv">
