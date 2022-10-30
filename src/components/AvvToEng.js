@@ -28,6 +28,7 @@ const AvvToEng = () => {
       cI += numIncrementCharIndex;
     }
 
+    // I think this should be just else ifs, rather than having ifs? I think that'd be easier to deal with
     // prettier-ignore
     while (cI < sTD.length) {
       // letterCase is 65 for uppercase, 97 for lowercase (ASCII)
