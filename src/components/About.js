@@ -3,12 +3,6 @@ export default function About() {
     // prettier-ignore
     <div className='about'>
       <h1>Avvocadopnean</h1>
-      <div id="introToAbout">
-        <p>hi welcome thanks for checking it out. This page is pretty obviously</p>
-        <img src='images/pikachuconstruction.gif' alt="pikachu drilling under a 'under construction' sign gif" />
-        <p>but I'll be working on it in the coming days/weeks.</p>
-        <p>basic text mostly works. some stuff like numbers don't work (yet). others bugs and features will be rolled out in due time</p>
-      </div>
 
       <div id="aboutAvv">
         <h2>ABOUT AVVOCADOPNEAN</h2>
