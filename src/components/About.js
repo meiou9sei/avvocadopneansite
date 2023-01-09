@@ -2,7 +2,6 @@ export default function About() {
   return (
     // prettier-ignore
     <div className='about'>
-      <h1>Avvocadopnean</h1>
 
       <div id="aboutAvv">
         <h2>ABOUT AVVOCADOPNEAN</h2>

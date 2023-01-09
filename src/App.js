@@ -6,8 +6,8 @@ import Footer from "./components/Footer";
 function App() {
   return (
     <div className='app'>
+      <h1>Avvocadopnean Cipher</h1>
       <EngToAvv />
-      <div style={{ backgroundColor: "red", width: "100%", height: "16px" }} />
       <AvvToEng />
       <About />
       <Footer />
