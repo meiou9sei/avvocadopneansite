@@ -3,18 +3,18 @@ import { useEffect } from "react";
 import useEngToAvv from "../logic/useEngToAvv";
 
 export default function EngToAvv({ savedEngText, setSavedEngText }) {
-  const { avvText2, setAvvText2, engText2, setEngText2 } = useEngToAvv();
+  const { avvText, setAvvText, engText, setEngText } = useEngToAvv();
 
   useEffect(() => {
-    setEngText2(savedEngText);
+    setEngText(savedEngText);
   }, []);
 
   useEffect(() => {
-    setSavedEngText(engText2);
-  }, [engText2]);
+    setSavedEngText(engText);
+  }, [engText]);
 
   const clearText = () => {
-    setEngText2("");
+    setEngText("");
   };
 
   return (
@@ -26,12 +26,12 @@ export default function EngToAvv({ savedEngText, setSavedEngText }) {
         id='engToAvvTextArea'
         cols='30'
         rows='10'
-        value={engText2}
-        onChange={(e) => setEngText2(e.target.value)}
+        value={engText}
+        onChange={(e) => setEngText(e.target.value)}
       ></textarea>
       <button onClick={clearText}>Clear entry</button>
       <p>test Avv translation:</p>
-      <p>{avvText2}</p>
+      <p>{avvText}</p>
     </div>
   );
 }

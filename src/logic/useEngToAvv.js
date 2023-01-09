@@ -3,8 +3,8 @@ import { useEffect, useState } from "react";
 import { AVVSYMBOLS, CLONESYMBOLS } from "../library/avvocConstants";
 
 const useEngToAvv = () => {
-  const [avvText2, setAvvText2] = useState("");
-  const [engText2, setEngText2] = useState("");
+  const [avvText, setAvvText] = useState("");
+  const [engText, setEngText] = useState("");
 
   useEffect(() => {
     /**
@@ -33,7 +33,7 @@ const useEngToAvv = () => {
      */
 
     // sTE = stringToEncipher
-    const sTE = engText2;
+    const sTE = engText;
     const avvString = [];
 
     // cI = charIndex. tracks which index of String on
@@ -116,10 +116,10 @@ const useEngToAvv = () => {
         console.log("entered");
       }
     }
-    setAvvText2(avvString);
-  }, [engText2]);
+    setAvvText(avvString);
+  }, [engText]);
 
-  return { avvText2, setAvvText2, engText2, setEngText2 };
+  return { avvText, setAvvText, engText, setEngText };
 };
 
 export default useEngToAvv;
