@@ -13,6 +13,10 @@ const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
     setSavedAvvText(avvText);
   }, [avvText]);
 
+  const clearText = () => {
+    setAvvText("");
+  };
+
   return (
     <div className='CipherInputBox'>
       <h2>Decipher Avvocadopnean to English</h2>
@@ -25,6 +29,8 @@ const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
         value={avvText}
         onChange={(e) => setAvvText(e.target.value)}
       ></textarea>
+      <button onClick={clearText}>Clear entry</button>
+
       <p>test Eng translation:</p>
       <p>{engText}</p>
     </div>

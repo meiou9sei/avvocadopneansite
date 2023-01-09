@@ -13,6 +13,10 @@ export default function EngToAvv({ savedEngText, setSavedEngText }) {
     setSavedEngText(engText2);
   }, [engText2]);
 
+  const clearText = () => {
+    setEngText2("");
+  };
+
   return (
     <div className='PlainTextInputBox'>
       <h2>Encipher English to Avvocadopnean</h2>
@@ -25,6 +29,7 @@ export default function EngToAvv({ savedEngText, setSavedEngText }) {
         value={engText2}
         onChange={(e) => setEngText2(e.target.value)}
       ></textarea>
+      <button onClick={clearText}>Clear entry</button>
       <p>test Avv translation:</p>
       <p>{avvText2}</p>
     </div>
