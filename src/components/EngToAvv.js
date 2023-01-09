@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 
-const AVVSYMBOLS = [".", ",", "?", "!", "'"];
-const CLONESYMBOLS = [":", ";", '"'];
+import { AVVSYMBOLS, CLONESYMBOLS } from "../library/avvocConstants";
 
 export default function EngToAvv() {
   const [avvText2, setAvvText2] = useState("");
@@ -87,7 +86,7 @@ export default function EngToAvv() {
 
       // deals w/ zs
       else if (sTE[cI] === "z" || sTE[cI] === "Z") pushOntoAvvString("...");
-
+      
       // deals w/ lowercase letters
       else if (/[a-z]/.test(sTE[cI])) {
         symbolRow = Math.floor((sTE[cI].charCodeAt(0) - 97) / 5);
