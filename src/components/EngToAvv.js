@@ -5,6 +5,7 @@ export default function EngToAvv() {
 
   return (
     <div className='PlainTextInputBox'>
+      <h2>Encipher English to Avvocadopnean</h2>
       <label htmlFor='EngToAvvTextArea'>Input Eng {"->"} Avv text here:</label>
       <textarea
         name='engToAvvTextArea'
