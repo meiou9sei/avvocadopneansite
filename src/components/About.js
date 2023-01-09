@@ -6,14 +6,14 @@ export default function About() {
 
       <div id="aboutAvv">
         <h2>ABOUT AVVOCADOPNEAN</h2>
-        <p>Avvocadopnean is a simple cipher I created while in highschool. It coincidentally resembles the Tap Code cipher, and honestly that's probably a better developed cipher than what I came up with. Avvocadopnean uses the symbols found on the bottom row of the iOS keyboard's special characters keyboard, and thus can be rapidly typed on an iPhone with practice.</p>
-        <p>Over time, cursive, caligraphy, morse, and spoken forms of Avvocadopnean were developed. There is very little use for this cipher as basically only I speak it lmao</p>
+        <p>Avvocadopnean is a simple cipher I created while in highschool. It coincidentally resembles the <a href="https://en.wikipedia.org/wiki/Tap_code" target="_blank">Tap Code</a> cipher. Avvocadopnean uses the symbols found on the bottom row of the iOS keyboard's special characters keyboard, and thus can be rapidly typed on an iPhone with practice.</p>
+        <p>Over time, cursive, caligraphy, morse, and spoken forms of Avvocadopnean were developed. It is a very niche cipher used by approximately 1 people(/person).</p>
       </div>
       <div id="usingAvv">
         <h2>USING AVVOCADOPNEAN</h2>
         <p>To use standard script Avvocadopnean, lay out the symbols</p>
-        <h2>. , ? ! '</h2>
-        <p>to a 5x5 grid like so:</p>
+        <p>. , ? ! '</p>
+        <p>to a 5x5 grid as so:</p>
         <code><pre>
     .          .   ,   ?   !   '  <br/>
     .        +-------------------+<br/>
