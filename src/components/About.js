@@ -15,18 +15,18 @@ export default function About() {
         <h2>. , ? ! '</h2>
         <p>to a 5x5 grid like so:</p>
         <code><pre>
-    .          .   ,   ?   !   '  <br></br>
-    .        +-------------------+<br></br>
-    .      . | A | B | C | D | E |<br></br>
-    .        +-------------------+<br></br>
-    .      , | F | G | H | I | J |<br></br>
-    .        +-------------------+<br></br>
-    .      ? | K | L | M | N | O |<br></br>
-    .        +-------------------+<br></br>
-    .      ! | P | Q | R | S | T |<br></br>
-    .        +-------------------+<br></br>
-    .      ' | U | V | W | X | Y |<br></br>
-    .        +-------------------+<br></br>
+    .          .   ,   ?   !   '  <br/>
+    .        +-------------------+<br/>
+    .      . | A | B | C | D | E |<br/>
+    .        +-------------------+<br/>
+    .      , | F | G | H | I | J |<br/>
+    .        +-------------------+<br/>
+    .      ? | K | L | M | N | O |<br/>
+    .        +-------------------+<br/>
+    .      ! | P | Q | R | S | T |<br/>
+    .        +-------------------+<br/>
+    .      ' | U | V | W | X | Y |<br/>
+    .        +-------------------+<br/>
     .       Z is represented as ...
         </pre></code>
         <p>To encipher a letter, first use the horizontal row then the vertical column.</p>
