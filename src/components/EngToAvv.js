@@ -1,8 +1,5 @@
 import { useEffect, useState } from "react";
 
-/* NOTE: */
-/* FOR NOW - SEPARATING AVV->ENG AND ENG->AVV. WILL MERGE THEM IN NEXT BRANCH */
-
 const AVVSYMBOLS = [".", ",", "?", "!", "'"];
 const CLONESYMBOLS = [":", ";", '"'];
 
@@ -11,33 +8,37 @@ export default function EngToAvv() {
   const [engText2, setEngText2] = useState("");
 
   useEffect(() => {
-    //ENG->AVV EXPLAINED (uppercase example)
-    //user types HELLO
-    //int values 72 69 76 76 79
-    //replaces those values with -64. / and % resulting int
-    //ex: 72 - 64 = 8. then divide 8 / 5 = 1, or 1st row (,), then 8 % 5 = 3, or 3rd column (?).
-    //takes these from AVVSYMBOLS[]
-    //ingenious i know hehe >:)
-    /*
-    ASCII Codes for A~Z. for a~z just use 97-122
-        .   ,   ?   !   '  
-      +-------------------+
-    . |65 |66 |67 |68 |69 |
-      +-------------------+
-    , |70 |71 |72 |73 |74 |
-      +-------------------+
-    ? |75 |76 |77 |78 |79 |
-      +-------------------+
-    ! |80 |81 |82 |83 |84 |
-      +-------------------+
-    ' |85 |86 |87 |88 |89 |
-      +-------------------+
-    ... is 90
-    */
+    /**
+     * ENG->AVV EXPLAINED (uppercase example)
+     * user types HELLO
+     * int values 72 69 76 76 79
+     * replaces those values with -64. / and % resulting int
+     * ex: 72 - 64 = 8. then divide 8 / 5 = 1, or 1st row (,), then 8 % 5 = 3, or 3rd column (?).
+     * takes these from AVVSYMBOLS[]
+     * ingenious i know hehe >:)
+     *
+     * ASCII Codes for A~Z. for a~z just use 97-122
+     *     .   ,   ?   !   '
+     *   +-------------------+
+     * . |65 |66 |67 |68 |69 |
+     *   +-------------------+
+     * , |70 |71 |72 |73 |74 |
+     *   +-------------------+
+     * ? |75 |76 |77 |78 |79 |
+     *   +-------------------+
+     * ! |80 |81 |82 |83 |84 |
+     *   +-------------------+
+     * ' |85 |86 |87 |88 |89 |
+     *   +-------------------+
+     * ... is 90
+     */
 
-    const sTE = engText2; // sTE = stringToEncipher
+    // sTE = stringToEncipher
+    const sTE = engText2;
     const avvString = [];
-    let cI = 0; // cI = charIndex. tracks which index of String on
+
+    // cI = charIndex. tracks which index of String on
+    let cI = 0;
     let symbolRow = null;
     let symbolColumn = null;
 
@@ -47,6 +48,7 @@ export default function EngToAvv() {
       cI += numIncrementCharIndex;
     }
 
+    //prettier-ignore
     while (cI < sTE.length) {
       // deals w/ clone symbols
       if (CLONESYMBOLS.includes(sTE[cI])) {
@@ -62,6 +64,7 @@ export default function EngToAvv() {
             break;
         }
       }
+
       // deals w/ space character
       else if (sTE[cI] === " ") {
         // exclude "'"
@@ -74,13 +77,17 @@ export default function EngToAvv() {
           }
         }
       }
+
       // deals w/ punctuation markers which end sentence
       else if (sTE[cI] !== "'" && AVVSYMBOLS.includes(sTE[cI]))
         pushOntoAvvString(sTE[cI], 2);
+
       // - in english is -- in avvocadopnean
       else if (sTE[cI] === "-") pushOntoAvvString("--");
+
       // deals w/ zs
       else if (sTE[cI] === "z" || sTE[cI] === "Z") pushOntoAvvString("...");
+
       // deals w/ lowercase letters
       else if (/[a-z]/.test(sTE[cI])) {
         symbolRow = Math.floor((sTE[cI].charCodeAt(0) - 97) / 5);
@@ -90,6 +97,7 @@ export default function EngToAvv() {
         temp.push(AVVSYMBOLS[symbolColumn]);
         pushOntoAvvString(temp);
       }
+
       // deals w/ uppercase letters - for now, does same thing, but later will add option to ^ these
       else if (/[A-Z]/.test(sTE[cI])) {
         symbolRow = Math.floor((sTE[cI].charCodeAt(0) - 65) / 5);
@@ -99,8 +107,10 @@ export default function EngToAvv() {
         temp.push(AVVSYMBOLS[symbolColumn]);
         pushOntoAvvString(temp);
       }
-      // deal w/ numbers (to be added later)
-      // code for that here
+
+      // deal w/ numbers
+      // TODO: code for numbers here
+
       // deals w/ any other character not included in Avvocadopnean
       else {
         pushOntoAvvString(sTE[cI]);
@@ -109,6 +119,7 @@ export default function EngToAvv() {
     }
     setAvvText2(avvString);
   }, [engText2]);
+
   return (
     <div className='PlainTextInputBox'>
       <label htmlFor='EngToAvvTextArea'>Input Eng {"->"} Avv text here:</label>
