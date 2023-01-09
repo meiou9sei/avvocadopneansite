@@ -1,7 +1,18 @@
+import { useEffect } from "react";
+
 import useAvvToEng from "../logic/useAvvToEng";
 
-const AvvToEng = () => {
+const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
   const { avvText, setAvvText, engText, setEngText } = useAvvToEng();
+
+  useEffect(() => {
+    setAvvText(savedAvvText);
+  }, []);
+
+  useEffect(() => {
+    setSavedAvvText(avvText);
+  }, [avvText]);
+
   return (
     <div className='CipherInputBox'>
       <h2>Decipher Avvocadopnean to English</h2>

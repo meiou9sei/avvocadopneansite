@@ -4,12 +4,15 @@ import { useState } from "react";
 
 export default function Cipher() {
   const [activeCipher, setActiveCipher] = useState("EngToAvv");
-
   const switchCipher = () => {
     activeCipher === "EngToAvv"
       ? setActiveCipher("AvvToEng")
       : setActiveCipher("EngToAvv");
   };
+
+  const [savedAvvText, setSavedAvvText] = useState("");
+  const [savedEngText, setSavedEngText] = useState("");
+
   return (
     <section className='cipher'>
       <div className='switch-cipher-mode'>
@@ -18,8 +21,18 @@ export default function Cipher() {
         </button>
       </div>
       <div className='cipher-wrapper'>
-        {activeCipher === "EngToAvv" && <EngToAvv />}
-        {activeCipher === "AvvToEng" && <AvvToEng />}
+        {activeCipher === "EngToAvv" && (
+          <EngToAvv
+            savedEngText={savedEngText}
+            setSavedEngText={setSavedEngText}
+          />
+        )}
+        {activeCipher === "AvvToEng" && (
+          <AvvToEng
+            savedAvvText={savedAvvText}
+            setSavedAvvText={setSavedAvvText}
+          />
+        )}
       </div>
     </section>
   );

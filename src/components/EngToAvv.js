@@ -1,7 +1,17 @@
+import { useEffect } from "react";
+
 import useEngToAvv from "../logic/useEngToAvv";
 
-export default function EngToAvv() {
+export default function EngToAvv({ savedEngText, setSavedEngText }) {
   const { avvText2, setAvvText2, engText2, setEngText2 } = useEngToAvv();
+
+  useEffect(() => {
+    setEngText2(savedEngText);
+  }, []);
+
+  useEffect(() => {
+    setSavedEngText(engText2);
+  }, [engText2]);
 
   return (
     <div className='PlainTextInputBox'>
