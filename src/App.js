@@ -1,14 +1,12 @@
-import EngToAvv from "./components/EngToAvv";
-import AvvToEng from "./components/AvvToEng";
 import About from "./components/About";
+import Cipher from "./components/Cipher";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <div className='app'>
       <h1>Avvocadopnean Cipher</h1>
-      <EngToAvv />
-      <AvvToEng />
+      <Cipher />
       <About />
       <Footer />
     </div>
