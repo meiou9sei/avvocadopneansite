@@ -17,7 +17,7 @@ export default function Cipher() {
     <section className='cipher'>
       <div className='switch-cipher-mode'>
         <button className='switch-cipher-mode-button' onClick={switchCipher}>
-          Switch cipher!
+          Switch cipher mode!
         </button>
       </div>
       <div className='cipher-wrapper'>

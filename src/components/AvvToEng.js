@@ -28,7 +28,7 @@ const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
       ></textarea>
       <CipherControls clearText={setAvvText} copyText={engText} />
 
-      <p>Eng translation:</p>
+      <p>English result:</p>
       <p>{engText}</p>
     </div>
   );
