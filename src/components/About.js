@@ -42,7 +42,7 @@ export default function About() {
           !! ,? .' - !! !. .' ?! !' - $ 2 0 0 - ?' ?! - ,, .' ?! !! ,? ,! ?!🚩🚩🚩 草<br/>
           s  h  e    s  p  e  n  t    $ 2 0 0   o  n    g  e  n  s  h  i  n 🚩🚩🚩 草
         </pre></code>
-        <h3>Rules of Avvocadopnean that are (yet) not supported on this site:</h3>
+        <h3>Rules of Avvocadopnean not (yet) supported on this site:</h3>
         <p className="rule">Letter case can be specified with ^ and * for upper and lower respectively</p>
         <code><pre>
           I play LoL<br/>
