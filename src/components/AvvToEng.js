@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 
 import useAvvToEng from "../logic/useAvvToEng";
+import CipherControls from "./CipherControls";
 
 const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
   const { avvText, setAvvText, engText, setEngText } = useAvvToEng();
@@ -12,10 +13,6 @@ const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
   useEffect(() => {
     setSavedAvvText(avvText);
   }, [avvText]);
-
-  const clearText = () => {
-    setAvvText("");
-  };
 
   return (
     <div className='CipherInputBox'>
@@ -29,7 +26,7 @@ const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
         value={avvText}
         onChange={(e) => setAvvText(e.target.value)}
       ></textarea>
-      <button onClick={clearText}>Clear entry</button>
+      <CipherControls clearText={setAvvText} />
 
       <p>test Eng translation:</p>
       <p>{engText}</p>
