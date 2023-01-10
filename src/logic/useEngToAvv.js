@@ -116,7 +116,19 @@ const useEngToAvv = () => {
         console.log("entered");
       }
     }
-    setAvvText(avvString);
+
+    // concatenate array of arrays to just a string
+    let newString = "";
+    for (let i = 0; i < avvString.length; i++) {
+      if (avvString[i].length > 1) {
+        avvString[i] = avvString[i].join("");
+      }
+      if (avvString.length > 1) {
+        newString = avvString.join("");
+      }
+    }
+
+    setAvvText(newString);
   }, [engText]);
 
   return { avvText, setAvvText, engText, setEngText };
