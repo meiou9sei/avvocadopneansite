@@ -1,12 +1,10 @@
 # AvvocadopneanSite
-Website about and for using Avvocadopnean, my very own cipher.
+
+Website for using my cipher Avvocadopnean
+
+Live here: https://meiou9sei.github.io/avvocadopneansite/
 
 Based on the C program I made here: https://github.com/meiou9sei/AvvocadopneanCipherTranslator
-
-Purpose of this project is to:
-- finish program
-- available online (more convenient)
-- practice React 
 
 **License**
 
