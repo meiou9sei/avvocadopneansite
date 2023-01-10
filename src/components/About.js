@@ -1,7 +1,9 @@
+import TableAvvocEncipher from "./tables/TableAvvocEncipher";
+
 export default function About() {
   return (
     // prettier-ignore
-    <div className='about'>
+    <section className='about'>
 
       <div id="aboutAvv">
         <h2>ABOUT AVVOCADOPNEAN</h2>
@@ -12,30 +14,16 @@ export default function About() {
         <h2>USING AVVOCADOPNEAN</h2>
         <p>To use standard script Avvocadopnean, lay out the symbols</p>
         <p>. , ? ! '</p>
-        <p>to a 5x5 grid as so:</p>
-        <code><pre>
-    .          .   ,   ?   !   '  <br/>
-    .        +-------------------+<br/>
-    .      . | A | B | C | D | E |<br/>
-    .        +-------------------+<br/>
-    .      , | F | G | H | I | J |<br/>
-    .        +-------------------+<br/>
-    .      ? | K | L | M | N | O |<br/>
-    .        +-------------------+<br/>
-    .      ! | P | Q | R | S | T |<br/>
-    .        +-------------------+<br/>
-    .      ' | U | V | W | X | Y |<br/>
-    .        +-------------------+<br/>
-    .       Z is represented as ...
-        </pre></code>
+        <p>to a 5x5 grid as so:</p>        
+        <TableAvvocEncipher />
         <p>To encipher a letter, first use the horizontal row then the vertical column.</p>
         <p>Words are separated by a -</p>
         <p>For example:</p>
         <code><pre>
-    .       ,? .' ?, ?, ?' - '? ?' !? ?, .!<br></br>
-    .       h  e  l  l  o    w  o  r  l  d
+            ,? .' ?, ?, ?' - '? ?' !? ?, .!<br></br>
+            h  e  l  l  o    w  o  r  l  d
         </pre></code>
       </div>
-    </div>
+    </section>
   );
 }
