@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/avvocadopneansite/static/css/main.6f3e36c0.css",
-    "main.js": "/avvocadopneansite/static/js/main.6462994b.js",
+    "main.js": "/avvocadopneansite/static/js/main.beee4be8.js",
     "index.html": "/avvocadopneansite/index.html",
     "main.6f3e36c0.css.map": "/avvocadopneansite/static/css/main.6f3e36c0.css.map",
-    "main.6462994b.js.map": "/avvocadopneansite/static/js/main.6462994b.js.map"
+    "main.beee4be8.js.map": "/avvocadopneansite/static/js/main.beee4be8.js.map"
   },
   "entrypoints": [
     "static/css/main.6f3e36c0.css",
-    "static/js/main.6462994b.js"
+    "static/js/main.beee4be8.js"
   ]
 }
