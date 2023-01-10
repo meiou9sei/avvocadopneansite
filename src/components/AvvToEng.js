@@ -26,7 +26,7 @@ const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
         value={avvText}
         onChange={(e) => setAvvText(e.target.value)}
       ></textarea>
-      <CipherControls clearText={setAvvText} />
+      <CipherControls clearText={setAvvText} copyText={engText} />
 
       <p>test Eng translation:</p>
       <p>{engText}</p>

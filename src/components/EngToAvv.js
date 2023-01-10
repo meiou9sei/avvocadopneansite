@@ -26,7 +26,7 @@ export default function EngToAvv({ savedEngText, setSavedEngText }) {
         value={engText}
         onChange={(e) => setEngText(e.target.value)}
       ></textarea>
-      <CipherControls clearText={setEngText} />
+      <CipherControls clearText={setEngText} copyText={avvText} />
       <p>test Avv translation:</p>
       <p>{avvText}</p>
     </div>

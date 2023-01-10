@@ -94,7 +94,19 @@ const useAvvToEng = () => {
       // any other text is punctuation (left alone) or non-interpretable text (not proper avvocadopnean)
       else pushOntoEngString(sTD[cI]);
     }
-    setEngText(engString);
+
+    // concatenate array of arrays to just a string
+    let newString = "";
+    for (let i = 0; i < engString.length; i++) {
+      if (engString[i].length > 1) {
+        engString[i] = engString[i].join("");
+      }
+      if (engString.length > 1) {
+        newString = engString.join("");
+      }
+    }
+
+    setEngText(newString);
   }, [avvText]);
 
   return { avvText, setAvvText, engText, setEngText };
