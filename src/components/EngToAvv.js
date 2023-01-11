@@ -12,6 +12,7 @@ export default function EngToAvv({ savedEngText, setSavedEngText }) {
 
   useEffect(() => {
     setSavedEngText(engText);
+    localStorage.setItem("avvoc.savedEngText", engText);
   }, [engText]);
 
   return (
