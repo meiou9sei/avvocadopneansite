@@ -98,9 +98,6 @@ const useAvvToEng = () => {
     // concatenate array of arrays to just a string
     let newString = "";
     for (let i = 0; i < engString.length; i++) {
-      if (engString[i].length > 1) {
-        engString[i] = engString[i].join("");
-      }
       if (engString.length > 1) {
         newString = engString.join("");
       }
