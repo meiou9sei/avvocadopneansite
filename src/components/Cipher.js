@@ -10,8 +10,12 @@ export default function Cipher() {
       : setActiveCipher("EngToAvv");
   };
 
-  const [savedAvvText, setSavedAvvText] = useState("");
-  const [savedEngText, setSavedEngText] = useState("");
+  const [savedAvvText, setSavedAvvText] = useState(
+    "" || localStorage.getItem("avvoc.savedAvvText")
+  );
+  const [savedEngText, setSavedEngText] = useState(
+    "" || localStorage.getItem("avvoc.savedEngText")
+  );
 
   return (
     <section className='cipher'>

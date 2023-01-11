@@ -12,6 +12,7 @@ const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
 
   useEffect(() => {
     setSavedAvvText(avvText);
+    localStorage.setItem("avvoc.savedAvvText", avvText);
   }, [avvText]);
 
   return (
