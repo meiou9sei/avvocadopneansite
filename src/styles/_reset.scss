@@ -7,11 +7,11 @@
 }
 
 .light {        
-    color: black;
-    background-color: $off-white;
+    color: $text-lightMode;
+    background-color: $background-lightMode;
 }
 
 .dark {
-    color: white;
-    background-color: $dark-grey;
+    color: $text-darkMode;
+    background-color: $background-darkMode;
 }
