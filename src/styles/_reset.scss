@@ -1,0 +1,17 @@
+@import './colors';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.light {        
+    color: black;
+    background-color: $off-white;
+}
+
+.dark {
+    color: white;
+    background-color: $dark-grey;
+}
