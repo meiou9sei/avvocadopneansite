@@ -11,10 +11,10 @@ export default function Cipher() {
   };
 
   const [savedAvvText, setSavedAvvText] = useState(
-    "" || localStorage.getItem("avvoc.savedAvvText")
+    localStorage.getItem("avvoc.savedAvvText") || ""
   );
   const [savedEngText, setSavedEngText] = useState(
-    "" || localStorage.getItem("avvoc.savedEngText")
+    localStorage.getItem("avvoc.savedEngText") || ""
   );
 
   return (
