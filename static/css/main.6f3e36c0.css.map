@@ -1,1 +1,0 @@
-{"version":3,"file":"static/css/main.6f3e36c0.css","mappings":"AAAA,MACI,gBAAiB,CACjB,gBAAiB,CACjB,iBACJ","sources":["components/tables/tableStyling.css"],"sourcesContent":["th, td {\r\n    border: 1px solid;\r\n    padding: 4px 16px;\r\n    text-align: center;\r\n}"],"names":[],"sourceRoot":""}
