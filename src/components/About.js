@@ -68,6 +68,7 @@ export default function About() {
         <h2>OTHER FORMS OF AVVOCADOPNEAN</h2>
         <p>Avvocadopnean can also be written in cursive and calligraphy, and has morse code-style and spoken variants. Explanations of these variants will be added in the future.</p>
       </section>
+      
     </section>
   );
 }
