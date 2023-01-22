@@ -19,11 +19,6 @@ export default function Cipher() {
 
   return (
     <section className='cipher'>
-      <div className='switch-cipher-mode'>
-        <button className='switch-cipher-mode-button' onClick={switchCipher}>
-          Switch cipher mode!
-        </button>
-      </div>
       <div className='cipher-wrapper'>
         {activeCipher === "EngToAvv" && (
           <EngToAvv
@@ -38,6 +33,9 @@ export default function Cipher() {
           />
         )}
       </div>
+      <button className='switch-cipher-mode' onClick={switchCipher}>
+        Switch cipher mode!
+      </button>
     </section>
   );
 }

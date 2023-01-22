@@ -16,21 +16,27 @@ const AvvToEng = ({ savedAvvText, setSavedAvvText }) => {
   }, [avvText]);
 
   return (
-    <div className='CipherInputBox'>
+    <div className='cipher-input-box'>
       <h2>Decipher Avvocadopnean to English</h2>
-      <label htmlFor='AvvToEngTextArea'>Input Avv {"->"} Eng text here:</label>
-      <textarea
-        name='AvvToEngTextArea'
-        id='AvvToEngTextArea'
-        cols='30'
-        rows='10'
-        value={avvText}
-        onChange={(e) => setAvvText(e.target.value)}
-      ></textarea>
+      <div className='cipher-io'>
+        <div className='cipher-input'>
+          <h3>
+            <label htmlFor='AvvToEngTextArea'>Input Avvocadopnean text:</label>
+          </h3>
+          <textarea
+            name='AvvToEngTextArea'
+            id='AvvToEngTextArea'
+            className='cipher-textarea'
+            value={avvText}
+            onChange={(e) => setAvvText(e.target.value)}
+          ></textarea>
+        </div>
+        <div className='cipher-output'>
+          <h3>English result:</h3>
+          <textarea className='cipher-resultarea' value={engText}></textarea>
+        </div>
+      </div>
       <CipherControls clearText={setAvvText} copyText={engText} />
-
-      <p>English result:</p>
-      <p>{engText}</p>
     </div>
   );
 };
