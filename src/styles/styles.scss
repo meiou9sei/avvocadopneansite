@@ -1,0 +1,228 @@
+@import './colors';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Courier New', Courier, monospace;
+}
+
+p {
+    font-size: 1.1rem;
+}
+
+.light {        
+    color: $text-lightMode;
+    background-color: $background-lightMode;
+    
+    a {
+        color: blue;
+    }
+    a:hover {
+        color: teal;
+    }
+
+    .switch-theme {
+        background-color: lightcoral;
+    }
+
+    header {
+        background-color: white;
+    }
+
+    .cipher-textarea,
+    .cipher-resultarea {
+        background-color: $textarea-lightMode;
+    }
+
+    .cipher-controls {
+        button {
+            background-color: rgb(187, 187, 187);
+        }
+    }
+
+    pre {
+        background-color: $textarea-lightMode;
+    }
+}
+
+.dark {
+    color: $text-darkMode;
+    background-color: $background-darkMode;
+
+    a {
+        color: orange;
+    }
+    a:hover {
+        color: orangered;
+    }
+
+    .switch-theme {
+        background-color: lightseagreen;
+    }
+
+    header {
+        background-color: black;
+        color: white;
+    }
+    
+    .cipher-textarea,
+    .cipher-resultarea {
+        background-color: $textarea-darkMode;
+        color: white;
+    }
+
+    .cipher-controls {
+        button {
+            background-color: dimgray;
+            color: white;
+        }
+    }
+
+    pre {
+        background-color: $textarea-darkMode;
+    }
+}
+
+button {
+    border: none;
+    padding: 8px;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: none;
+}
+
+button:hover {
+    background-image: linear-gradient(rgb(0 0 0/10%) 0 0);
+}
+
+a {
+    text-decoration: none;
+}
+
+pre {
+    padding: 1rem;
+    
+}
+
+header {
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    & > * {
+        max-width: 700px;
+    }
+
+    & > section {
+        padding: 3rem 0;
+    }
+}
+
+.cipher {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+
+    border-bottom: dashed;
+}
+
+.cipher, .cipher-wrapper, .cipher-input-box, .cipher-io {
+    width: 100%;
+    max-width: 1250px;
+    text-align: center;
+}
+
+.cipher-io {
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+    height: 50vh;
+    max-height: 20rem;
+
+    .cipher-input, .cipher-output {
+        flex-grow: 1;
+        flex-basis: 40%;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+.cipher-input-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+
+    .cipher-controls {
+        width: 100%;
+        display: flex;
+        gap: 1rem;
+        justify-content: space-around;
+    }
+}
+
+.cipher-textarea, .cipher-resultarea {
+    width: 90%;
+    min-height: 10rem;
+    height: 100%;
+    border-radius: 5px;
+    padding: 0.5rem;
+    font-size: 1.15rem;
+}
+
+.switch-cipher-mode {
+    font-size: 1rem;
+    margin-top: 2rem;
+    align-self: center;
+    background-color: orange;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+
+    section {
+        margin: 2px;
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+
+        h2 {
+            text-align: center;
+        }
+
+        table {
+            align-self: center;
+        }
+    }
+}
+
+footer {
+    width: 100%;
+    text-align: center;
+    padding: 16px;
+}
+
+@media screen and (max-width: 600px) {
+    .cipher-io {
+        flex-direction: column;
+    }
+
+    .cipher-controls {
+        margin-top: 5rem;
+    }
+}

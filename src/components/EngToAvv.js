@@ -16,20 +16,27 @@ export default function EngToAvv({ savedEngText, setSavedEngText }) {
   }, [engText]);
 
   return (
-    <div className='PlainTextInputBox'>
+    <div className='cipher-input-box'>
       <h2>Encipher English to Avvocadopnean</h2>
-      <label htmlFor='EngToAvvTextArea'>Input Eng {"->"} Avv text here:</label>
-      <textarea
-        name='engToAvvTextArea'
-        id='engToAvvTextArea'
-        cols='30'
-        rows='10'
-        value={engText}
-        onChange={(e) => setEngText(e.target.value)}
-      ></textarea>
+      <div className='cipher-io'>
+        <div className='cipher-input'>
+          <h3>
+            <label htmlFor='EngToAvvTextArea'>Input English text:</label>
+          </h3>
+          <textarea
+            name='engToAvvTextArea'
+            id='engToAvvTextArea'
+            className='cipher-textarea'
+            value={engText}
+            onChange={(e) => setEngText(e.target.value)}
+          ></textarea>
+        </div>
+        <div className='cipher-output'>
+          <h3>Avvocadopnean result:</h3>
+          <textarea className='cipher-resultarea' value={avvText}></textarea>
+        </div>
+      </div>
       <CipherControls clearText={setEngText} copyText={avvText} />
-      <p>Avvocadopnean result:</p>
-      <p>{avvText}</p>
     </div>
   );
 }
