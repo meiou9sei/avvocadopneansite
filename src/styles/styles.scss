@@ -104,7 +104,6 @@ a {
 
 pre {
     padding: 1rem;
-    overflow: scroll;
 }
 
 header {
@@ -211,7 +210,6 @@ main {
 }
 
 .table-wrapper {
-    overflow: scroll;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -249,6 +247,10 @@ footer {
 
     .cipher-controls {
         margin-top: 5rem;
+    }
+
+    pre, .table-wrapper {
+        overflow: auto;
     }
 
     th,
