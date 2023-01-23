@@ -40,9 +40,9 @@ export default function About() {
         </pre>
         <p className="rule">Non-standard letters are written as they are</p>
         <pre>
-          She spent $200 on Genshin🚩🚩🚩草<br/><br/>
-          !! ,? .' - !! !. .' ?! !' - $ 2 0 0 - ?' ?! - ,, .' ?! !! ,? ,! ?!🚩🚩🚩 草<br/>
-          s  h  e    s  p  e  n  t    $ 2 0 0   o  n    g  e  n  s  h  i  n 🚩🚩🚩 草
+          She spent $200 on Genshin🚩🚩🚩（笑）<br/><br/>
+          !! ,? .' - !! !. .' ?! !' - $ 2 0 0 - ?' ?! - ,, .' ?! !! ,? ,! ?!🚩🚩🚩 （笑）<br/>
+          s  h  e    s  p  e  n  t    $ 2 0 0   o  n    g  e  n  s  h  i  n 🚩🚩🚩 （笑）
         </pre>
         <h3>Rules of Avvocadopnean not (yet) supported on this site:</h3>
         <p className="rule">Letter case can be specified with ^ and * for upper and lower respectively</p>
