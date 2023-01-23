@@ -5,7 +5,7 @@ export default function CipherControls({ clearText, copyText }) {
     <div className='cipher-controls'>
       <button onClick={() => clearText("")}>Clear entry</button>
       <CopyToClipboard text={copyText}>
-        <button>Copy result to clipboard</button>
+        <button>Copy result</button>
       </CopyToClipboard>
     </div>
   );
