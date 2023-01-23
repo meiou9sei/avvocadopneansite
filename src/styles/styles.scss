@@ -92,7 +92,6 @@ button {
     padding: 8px;
     border-radius: 5px;
     cursor: pointer;
-    background-color: none;
 }
 
 button:hover {
@@ -105,7 +104,7 @@ a {
 
 pre {
     padding: 1rem;
-    
+    overflow: scroll;
 }
 
 header {
@@ -147,8 +146,7 @@ main {
     display: flex;
     justify-content: space-between;
     gap: 1rem;
-    height: 50vh;
-    max-height: 20rem;
+    max-height: max(50vh, 20rem);
 
     .cipher-input, .cipher-output {
         flex-grow: 1;
@@ -194,6 +192,7 @@ main {
     display: flex;
     flex-direction: column;
     gap: 3rem;
+    max-width: 95vw;
 
     section {
         margin: 2px;
@@ -211,6 +210,24 @@ main {
     }
 }
 
+.table-wrapper {
+    overflow: scroll;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th,
+td {
+    border: 1px solid;
+    padding: 4px 16px;
+    text-align: center;
+}
+
 footer {
     width: 100%;
     text-align: center;
@@ -218,11 +235,26 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    button.switch-theme {
+        padding: 2px;
+    }
+
     .cipher-io {
         flex-direction: column;
     }
 
     .cipher-controls {
         margin-top: 5rem;
+    }
+
+    th,
+    td {
+        border: 1px solid;
+        padding: 2px 8px;
+        text-align: center;
     }
 }

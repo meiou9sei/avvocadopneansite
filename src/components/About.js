@@ -17,7 +17,9 @@ export default function About() {
         <p>To use standard script Avvocadopnean, lay out the symbols</p>
         <pre>. , ? ! '</pre>
         <p>to a 5x5 grid as shown. To encipher a letter, first use the horizontal row then the vertical column.</p>        
-        <TableAvvocDecipher />
+        <div className="table-wrapper">
+          <TableAvvocDecipher />
+        </div>
         <p className="rule">Letters are separated by a single space</p>
         <pre>
           Pluto<br/><br/>
@@ -57,7 +59,9 @@ export default function About() {
           i    a  m    0b10110   y  e  a  r  s    o  l  d      
         </pre>
         <p className="rule">!_ denotes a base 10 number<br/>These are the numbers in Base 10:</p>
-        <TableAvvocNumbers />
+        <div className="table-wrapper">
+          <TableAvvocNumbers />
+        </div>
         <pre>
           I was born in 2000.<br/><br/>
           ,! - '? .. !! - ., ?' !? ?! - ,! ?! - !_*,^'^'^' .<br/>

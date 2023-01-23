@@ -1,5 +1,3 @@
-import "./tableStyling.css";
-
 export default function TableAvvocNumbers() {
   return (
     // prettier-ignore

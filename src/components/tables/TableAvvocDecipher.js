@@ -1,5 +1,3 @@
-import "./tableStyling.css";
-
 export default function TableAvvocDecipher() {
   return (
     // prettier-ignore
