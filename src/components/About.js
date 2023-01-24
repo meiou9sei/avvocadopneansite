@@ -68,7 +68,7 @@ export default function About() {
           i    w  a  s    b  o  r  n    i  n      2 0 0 0  .   
         </pre>
         <h3>Bugs:</h3>
-        <p>I am aware that there are bugs with this app, and will be fixing them in the future. However, the cipher should work in most cases.</p>
+        <p>I am aware that there are bugs with this app, and will be fixing them in the future. However, the cipher should work in most cases. Please send any bugs or feedback to cameron@vvampa.to with the subject line "avvoc (description here)"</p>
       </section>
       <section className="usingAvv">
         <h2>OTHER FORMS OF AVVOCADOPNEAN</h2>
